@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kafe Menü</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Kafemizin menüsünü görüntüleyin: kahvaltı, burger, yan ürünler, tatlılar, içecekler ve pizza menüleri." />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">☕ CREED CAFE</div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menüler</a></li>
+        <li><a href="#contact">Bize Ulaşın</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Ürün ara..." aria-label="Ürün arama" />
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menü -->
+  <section id="menu">
+    <h2 class="section-title">Menüler</h2>
+
+    <!-- Ana Kategoriler -->
+    <ul id="categoryMenu" class="category-menu" role="tablist">
+      <li data-category="all" class="active" role="tab" aria-selected="true">Tümü</li>
+      <li data-category="kahvalti" role="tab">Kahvaltı</li>
+      <li data-category="burger" role="tab">Burger Menüler</li>
+      <li data-category="yan" role="tab">Yan Ürünler</li>
+      <li data-category="tatli" role="tab">Tatlılar</li> <!-- ✅ yeni eklendi -->
+      <li data-category="icecek" role="tab">İçecekler</li>
+      <li data-category="pizza" role="tab">Pizza Menüler</li>
+    </ul>
+
+    <!-- Ürünler JS ile yüklenecek -->
+    <div class="menu-container" id="menuContainer" aria-live="polite"></div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="contact">
+    <h2 class="section-title">Bize Ulaşın</h2>
+    <div class="contact-wrap">
+      <p><strong>Adres:</strong> Ofis. Sanat sok. No:12, Diyarbakır</p>
+      <p><strong>Telefon:</strong> <a href="tel:+905551112233">+90 552 853 84 21</a></p>
+      <p><strong>E-posta:</strong> <a href="mailto:info@kafemiz.com">yilmazaliisyar@gmail.com</a></p>
+      <p><strong>Çalışma Saatleri:</strong> 09:00 – 23:30</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CREED CAFE — Tüm Hakları Saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

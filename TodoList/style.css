@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root{
+    --primary-color: #34dba9;
+    --secondary-color: #502ecc;
+}
+
+body{
+    font-family: "Montserrat",sans-serif;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(190deg,var(--primary-color),var(--secondary-color));
+
+}
+
+.container{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: var(--primary-color);
+
+}
+
+.input-container{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todoinput{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+button{
+    padding: 15px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    transition: 300ms all;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--secondary-color);  
+}
+
+
+ul{
+    list-style-type:none;
+    padding: 0px;
+
+}
+
+li{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    animation: fadeIn 0.5s ease;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+span{
+    flex: 1;
+    white-space:nowrap ;
+    overflow: hidden;
+    margin-right: 10px;
+    text-overflow: ellipsis;
+   
+}
+.completed span{
+    text-decoration: line-through;
+    color: #999;
+}
+
+.completed button{
+    color: #e74c3c;
+}
+
+
+@keyframes fadeIn{
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes fadeOut{
+    from{
+        
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+
+}

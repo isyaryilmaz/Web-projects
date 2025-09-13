@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Poppins";
+}
+
+.container{
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: linear-gradient(60deg, #214f51,#eee);
+    padding-bottom:60px ;
+}
+
+
+.container form{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 160px;
+    width: 600px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.container form .input-box{
+    margin-top: 20px;
+}
+.container form .input-box span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+
+}
+
+.container form .input-box input,
+.container form .input-box select{
+    width: 100%;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    color: #444;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap: 15px;
+}
+
+.container form .flexbox .input-box{
+    flex: 1 1 150px;
+}
+
+
+.container form .submit-btn{
+    width: 100%;
+    background: linear-gradient(55deg, #222831, #393e46);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 300ms all;
+    color: #fff;
+}
+
+.container form .submit-btn:hover{
+    opacity: 0.8;
+    letter-spacing: 4px;
+
+}
+
+.container .card-container{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    margin-bottom: -150px;
+}
+
+.container .card-container .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(55deg, #222831, #393e46);
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0,0.4);
+    backface-visibility: hidden;
+    padding: 20px;
+    transition: 400ms all ease-out;
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.container .card-container .front .image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+    height: 50px;
+    border-radius: 5px;
+    
+}
+
+.container .card-container .front .card-number-box{
+    color: #fff;
+    padding: 30px 0px;
+    font-size: 20px;
+}
+
+.container .card-container .front .flexbox{
+    display: flex;
+}
+
+
+.container .card-container .front .flexbox .box{
+    font-size: 15px;
+    color: #fff;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.container .card-container .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    background: linear-gradient(55deg, #222831, #393e46);
+    border-radius: 5px;
+    padding: 20px 0px;
+    transition: 400ms all ease-out;
+    transform: perspective(1000px) rotateY(180deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    text-align: right;
+    backface-visibility: hidden;
+}
+
+
+.container .card-container .back .box{
+   padding: 0px 20px;
+}
+
+
+.container .card-container .back .box span{
+    color: #fff;
+    font-size: 15px;
+    
+}
+
+
+.container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    
+
+}
+
+.container .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+
+.container .card-container .back .stripe{
+    background-color: #000;
+    width: 100%;
+    margin: 10px 0px;
+    height: 50px;
+}
+
+
+.container .card-container .front .card-holder-input{
+    overflow: hidden;
+}
